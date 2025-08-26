@@ -1,0 +1,90 @@
+
+.container {
+    justify-self: center;
+    width: 100%;
+}
+
+.apartment_title {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    margin-top: 2.25rem;
+}
+
+hr {
+    background-color: black;
+    opacity: 30%;
+    margin: 2.25rem 0;
+}
+
+.apartments_container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1.25rem;
+    overflow-x: auto;
+    position: relative;
+}
+
+.apartment_item {
+    cursor: grab;
+    user-select: none;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 24%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 1rem;
+    padding: 1.75rem 2.25rem;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.apartment_item:active {
+    position: absolute;
+    cursor: grabbing;
+}
+
+.apartment_item img {
+    width: 80%;
+    justify-self: center;
+}
+
+.apartment_data {
+    width: 100%;
+}
+
+.apartment_data_headline {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.apartment_project_link {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.apartment_data_desc {
+    font-size: 1rem;
+}
+
+.apartment_info_grid {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.grid_item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    max-width: 300px;
+}
+
+.grid_item .label,.value {
+    font-size: 1rem;
+}

@@ -1,0 +1,161 @@
+@font-face {
+    font-family: "Bebas Cyrillic";
+    src: url("../../public/fonts/custom/BebasNeueCyrillic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../../public/fonts/custom/Manrope-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../../public/fonts/custom/Manrope-Medium.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../../public/fonts/custom/Manrope-Bold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+.bebas {
+    font-family: 'Bebas Cyrillic';
+    line-height: 1.05;
+}
+
+.bebas_title {
+    font-family: 'Bebas Cyrillic';
+    font-size: clamp(2rem,10vw,10rem);
+    letter-spacing: -0.02em;
+    line-height: clamp(2rem,10vw,10rem);
+}
+
+.h1 {
+    font-family: 'Manrope';
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: -0.04rem;
+    line-height: 120%;
+}
+
+.h2 {
+    font-family: 'Manrope';
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.04rem;
+    line-height: 120%;
+}
+
+.bebas_h2 {
+    font-family: 'Bebas Cyrillic';
+    font-size: 2rem;
+    letter-spacing: -0.04rem;
+    line-height: 100%; 
+}
+
+.manrope_regular {
+    font-family: 'Manrope';
+    font-weight: 400;
+    letter-spacing: -0.015em;
+}
+
+.manrope_bold {
+    font-family: 'Manrope';
+    font-weight: 800;
+    letter-spacing: -0.015em;
+}
+
+.manrope_medium {
+    font-family: 'Manrope';
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+}
+
+.manrope_h2 {
+    font-family: 'Manrope';
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: -0.015em;
+}
+
+.manrope {
+    font-family: 'Manrope';
+}
+
+.manrope_h3 {
+    font-family: 'Manrope';
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.text-bold-24 {
+    font-family: 'Manrope';
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.015em;
+}
+
+
+.text-md-16 {
+    font-family: 'Manrope';
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+}
+
+.text-bold-16 {
+    font-family: 'Manrope';
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.015em;
+}
+
+.button-bold-16 {
+    font-family: 'Manrope';
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.015em;
+}
+
+.text_small {
+    font-family: 'Manrope';
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+}
+
+.text_small_bold {
+    font-family: 'Manrope';
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.015em;
+}
+
+.link {
+    font-family: 'Manrope';
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.015em;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 850px) {
+    .h1 {
+        font-size: 2rem;
+    }
+}

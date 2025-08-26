@@ -1,0 +1,48 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/
+      - ./_docker/nginx/conf.d/:/etc/nginx/conf.d/
+    depends_on:
+      - app
+    container_name: isso_nginx
+    networks:
+      - isso_net
+  
+  app:
+    build:
+      context: .
+      dockerfile: _docker/app/Dockerfile
+    volumes:
+      - ./:/var/www
+      - ./storage:/var/www/storage
+      - ./public:/var/www/public
+    depends_on:
+      - db
+    container_name: isso_app
+    networks:
+      - isso_net
+
+  db:
+    image: mysql:8.0
+    restart: always
+    volumes: 
+      - ./tmp/db:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: isso_proj
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "8101:3306"
+    command: mysqld --lower_case_table_names=1 --character-set-server=utf8 --collation-server=utf8_unicode_ci
+    container_name: isso_db
+    networks:
+      - isso_net
+
+networks:
+  isso_net:
+    driver: bridge

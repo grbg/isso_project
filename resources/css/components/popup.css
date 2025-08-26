@@ -1,0 +1,42 @@
+.popup {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 20px;
+    margin: 40px 20px;
+    padding: 20px;
+    border-radius: 16px;
+    width: 300px;
+    height: fit-content;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    overflow: hidden;
+}
+
+.popup img {
+    height: 1.5rem;
+}
+
+.popup.show {
+    display: block;
+    opacity: 1;     
+    pointer-events: auto; 
+}
+
+.sucess_popup_data {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.popup.show::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background: #007BFB;
+    animation: progressBar 4s linear forwards;
+    width: 100%;
+}

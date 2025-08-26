@@ -1,0 +1,130 @@
+/* Контейнер форм */
+.form_wrapper {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    background: url('../../../public/images/ui/background.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    min-height: 80vh;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: fit-content;
+    padding: 4rem 4rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.15) 0px 4px 16px 0px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.formIcon__container {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    border-radius: 1rem;
+    height: 6rem;
+    width: 6rem;
+    box-shadow: rgba(99, 99, 99, 0.15) 0px 4px 16px 0px;
+}
+
+.formIcon__container img {
+    width: 2rem;
+}
+
+.form__headline {
+    font-size: clamp(2rem,4vw,4rem);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.form {
+    margin: 1rem 0;
+}
+
+.form__subtitle {
+    text-align: center;
+    justify-self: center;
+    width: 80%;
+    color: var(--secondary-text)
+}
+
+.__input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+.__input input {
+    padding: 1rem 1rem;
+    outline: none;
+    border: 2px rgb(238, 238, 238) solid;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.__input input:focus {
+    padding: 1rem 1rem;
+    outline: none;
+    border: 2px rgb(0, 0, 0) solid;
+    border-radius: 0.5rem;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 1rem 0;
+    border: none;
+    border-radius: 2rem;
+    color: white;
+    background-color: var(--black-surface);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: black;
+}
+
+.btn:active,
+.toggle-btn:active {
+  transform: scale(0.96);
+}
+
+.error-message {
+    color: red;
+    font-size: 0.85rem;
+    min-height: 1.3rem;
+}
+
+.switch_link {
+    align-self: center;
+}
+
+@media (max-width: 1200px) {
+    .form__container {
+        width: 75%;
+    }
+}
+
+@media (max-width: 850px) {
+    .form-toggle-container {
+        max-width: 90vw;
+    }
+
+    .form__container {
+        width: 90%;
+    }
+}

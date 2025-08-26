@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Bebas Cyrillic";
+    src: url("/fonts/custom/BebasNeueCyrillic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Involve";
+    src: url("/fonts/custom/Involve-Bold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Involve";
+    src: url("/fonts/custom/Involve-Medium.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Involve";
+    src: url("/fonts/custom/Involve-SemiBold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("/fonts/custom/Manrope-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("/fonts/custom/Manrope-Medium.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("/fonts/custom/Manrope-Bold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+.bebas {
+    font-family: 'Bebas Cyrillic';
+    letter-spacing: -2%;
+}
+
+.manrope_regular {
+    font-family: 'Manrope';
+    font-weight: 400;
+    letter-spacing: -2%;
+}
+
+.manrope_bold {
+    font-family: 'Manrope';
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: -2%;
+}
+
+.manrope_medium {
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -2%;
+}

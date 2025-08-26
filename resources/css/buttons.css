@@ -1,0 +1,237 @@
+.arrow_icon_btn {
+    background-color: var(--primary-surface);
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    margin-top: auto;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.arrow_icon_btn svg {
+    transition: all 0.3s ease;
+}
+
+.arrow_icon_btn:hover {
+    scale: 1.2;
+}
+
+.arrow_icon_btn:hover svg {
+    transform: translateX(3px);
+}
+
+.arrow_button {
+    display: flex;
+    gap: 5px;
+    width: fit-content;
+    padding: 16px 20px;
+    border-radius: 16px;
+    margin-top: 20px;
+    align-self: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.heart_button {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    justify-content: center;
+    padding: 12px 24px;
+    border-radius: 16px;
+    margin-top: 0px;
+    align-self: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.heart_button svg {
+    transition: transform 0.3s ease; 
+    fill: white;
+}
+
+.heart_button:hover svg {
+    transform: scale(1.2); 
+}   
+
+.arrow_button svg {
+    transition: transform 0.3s ease; /* Плавная анимация для стрелки */
+}
+
+.arrow_button:hover svg {
+    transform: translateX(6px); /* Перемещаем стрелку вправо при наведении */
+}
+
+
+.news_btn {
+    margin-top: 0;
+}
+
+.btn_1 {
+    width: fit-content;
+    border-radius: 2rem;
+    height: fit-content;
+    color: #007BFB;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
+.btn_1.selected {
+    background-color: #007BFB;
+    color: white;
+}
+
+.city_filter {
+    width: 50%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 0.75em 1.8em;
+    outline: none;
+}
+
+.flat_type_filter {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.filter_button {
+    position: relative;
+    overflow: hidden;
+    padding: 0.8rem 1.6rem;
+    background-color: #DFEFFF;
+    color: #000;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 32px;
+    z-index: 1;
+    transition: all 0.6s ease;
+}
+
+.filter_button:hover {
+    border-radius: 8px;
+}
+  
+.filter_button .label {
+  position: relative;
+  z-index: 2;
+}
+
+.filter_button .fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #007bfb;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.filter_button.active {
+  color: #fff;
+}
+
+.filter_button.active .fill {
+    height: 100%;
+}
+
+.fullscreen_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 32px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.fullscreen_btn svg {
+    fill: #007BFB;
+}
+
+.fullscreen_btn:hover svg {
+    fill: white;
+}
+
+.fullscreen_btn:hover {
+    background-color: #007BFB;
+    border-radius: 6px;
+}
+
+.menu_item {
+    display: block;
+    padding: 0.5rem 4rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-decoration: none;
+    color: #007BFB;
+    text-align: center;
+    border: 1px #007BFB solid;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.menu_item:hover {
+    background-color: #007BFB;
+    color: white;
+}
+
+.logout_btn:hover {
+    background-color: red;
+    color: white;
+}
+
+.logout_btn {
+    background-color: white;
+    border: 1px red solid;
+    cursor: pointer;
+    color: #ff0000;
+}
+
+.hidden {
+    display: none;
+}
+
+.form__button {
+    display: block;
+    padding: 0.75rem 2rem;
+    margin-bottom: 8px;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: var(--primary-surface);
+    cursor: pointer;
+    color: var(--on-action-text);
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.form__button:hover {
+    background-color: var(--on-action-surface-hover);
+    border-radius: 1rem;
+}
+
+
+.form__button.secondary {
+    background-color: var(--secondary-surface);
+    color: var(--primary-text);
+    border: 1px var(--black-surface) solid;
+}
+
+.form__button.secondary:hover {
+    background-color: var(--black-surface);
+    color: var(--on-action-text);
+    border-radius: 1rem;
+}

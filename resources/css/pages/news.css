@@ -1,0 +1,26 @@
+body {
+    margin: 0px;
+    background-color: #FFFFFF;
+}
+
+.news_container {
+    margin-top: 4rem;
+    width: 80%;
+    justify-self: center;
+}
+
+.news_container img {
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.news_title {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+    .news_title {
+        font-size: 2rem;
+    }
+}
